@@ -11,8 +11,8 @@
     --clr-white: #FFFFFF;
     
     /* Typography */
-    --font-heading: 'Prompt', sans-serif;
-    --font-body: 'Kanit', sans-serif;
+    --font-heading: 'IBM Plex Sans Thai Looped', sans-serif;
+    --font-body: 'IBM Plex Sans Thai Looped', sans-serif;
     
     /* Box Shadow / Glassmorphism */
     --shadow-sm: 0 4px 6px rgba(47, 42, 38, 0.05);
@@ -588,4 +588,62 @@ footer {
         color: var(--clr-white) !important;
         font-size: 1.5rem;
     }
+}
+
+/* ========================================= */
+/* Preloader (Pla Tapian) */
+/* ========================================= */
+body.loading {
+    overflow: hidden;
+}
+
+#preloader {
+    position: fixed;
+    inset: 0;
+    background-color: var(--clr-bg-light);
+    z-index: 9999;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    transition: opacity 0.6s ease-out, visibility 0.6s ease-out;
+}
+
+#preloader.preloader-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.pla-tapian-loader {
+    width: 100px;
+    height: 100px;
+    animation: swim 2s ease-in-out infinite, bob 3s ease-in-out infinite;
+}
+
+.loader-text {
+    margin-top: 20px;
+    font-family: var(--font-heading);
+    color: var(--clr-primary-dark);
+    font-size: 1.2rem;
+    font-weight: 500;
+    letter-spacing: 1px;
+    animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes swim {
+    0% { transform: scaleX(1); }
+    50% { transform: scaleX(0.9); }
+    100% { transform: scaleX(1); }
+}
+
+@keyframes bob {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0); }
+}
+
+@keyframes pulse {
+    0% { opacity: 0.6; }
+    50% { opacity: 1; }
+    100% { opacity: 0.6; }
 }

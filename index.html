@@ -1,18 +1,45 @@
 <!DOCTYPE html>
 <html lang="th">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="สานศิลป์ไทย (Sann-Silp-Thai) - เผยแพร่ Soft Power ของไทย งานจักสาน ศิลปะชุมชนแห่งสยาม">
+    <meta name="description"
+        content="สานศิลป์ไทย (Sann-Silp-Thai) - เผยแพร่ Soft Power ของไทย งานจักสาน ศิลปะชุมชนแห่งสยาม">
     <title>สานศิลป์ไทย (Sann-Silp-Thai) | หัตถกรรมงานจักสาน</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;600&family=Prompt:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&display=swap"
+        rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body>
+
+<body class="loading">
+
+    <!-- Preloader Plugin (Pla Tapian) -->
+    <div id="preloader">
+        <div class="pla-tapian-loader">
+            <svg viewBox="0 0 100 100" width="100" height="100">
+                <polygon points="50,20 80,50 50,80 20,50" fill="var(--clr-primary)" stroke="var(--clr-bg-light)"
+                    stroke-width="2" stroke-linejoin="round" />
+                <line x1="35" y1="35" x2="65" y2="65" stroke="var(--clr-bg-light)" stroke-width="1.5" />
+                <line x1="35" y1="65" x2="65" y2="35" stroke="var(--clr-bg-light)" stroke-width="1.5" />
+                <line x1="50" y1="20" x2="50" y2="80" stroke="var(--clr-bg-light)" stroke-width="1.5" />
+                <line x1="20" y1="50" x2="80" y2="50" stroke="var(--clr-bg-light)" stroke-width="1.5" />
+                <polygon points="20,50 0,30 0,70" fill="var(--clr-primary-dark)" stroke="var(--clr-bg-light)"
+                    stroke-width="2" stroke-linejoin="round" />
+                <polygon points="65,35 80,10 50,20" fill="var(--clr-primary-dark)" stroke="var(--clr-bg-light)"
+                    stroke-width="2" stroke-linejoin="round" />
+                <polygon points="65,65 80,90 50,80" fill="var(--clr-primary-dark)" stroke="var(--clr-bg-light)"
+                    stroke-width="2" stroke-linejoin="round" />
+                <circle cx="70" cy="50" r="3" fill="var(--clr-bg-light)" />
+            </svg>
+        </div>
+        <div class="loader-text">กำลังโหลด...</div>
+    </div>
 
     <!-- Header / Nav -->
     <header id="main-header">
@@ -40,7 +67,8 @@
         <div class="hero-overlay"></div>
         <div class="hero-content fade-in-up">
             <h1 class="hero-title">สานศิลป์ไทย<br><span>หัตถศิลป์ ล้ำค่า คู่แผ่นดิน</span></h1>
-            <p class="hero-subtitle">มนต์เสน่ห์แห่ง "งานจักสาน" Soft Power ที่สะท้อนวิถีชีวิต <br>ภูมิปัญญา และศิลปะที่ประณีตของคนไทย</p>
+            <p class="hero-subtitle">มนต์เสน่ห์แห่ง "งานจักสาน" Soft Power ที่สะท้อนวิถีชีวิต <br>ภูมิปัญญา
+                และศิลปะที่ประณีตของคนไทย</p>
             <a href="#about" class="btn btn-primary">ค้นพบความงดงาม</a>
         </div>
     </section>
@@ -54,8 +82,12 @@
             </div>
             <div class="about-text reveal fade-in-right">
                 <h2 class="section-title">มรดกทางวัฒนธรรม<br>สู่ <span>Soft Power</span></h2>
-                <p>งานจักสานไม่ใช่แค่เพียงของใช้ในครัวเรือน แต่คือ <strong>งานศิลปกรรม</strong> ที่ถ่ายทอดจากรุ่นสู่รุ่น เป็นตัวแทนบ่งบอกถึงภูมิปัญญาพื้นบ้านของคนไทยในการนำวัสดุธรรมชาติรอบตัว เช่น ไม้ไผ่ หวาย กระจูด มาสร้างสรรค์เป็นผลงานที่สะท้อนถึงวิถีชีวิต</p>
-                <p>วันนี้ <strong>"สานศิลป์ไทย"</strong> ขอนำเสนอศิลปะแขนงนี้ให้กลับมามีชีวิตชีวาอีกครั้ง นำสู่สายตาชาวโลกในฐานะ Soft Power ที่ทรงคุณค่า ผสมผสานความดั้งเดิมเข้ากับสุนทรียภาพแห่งยุคสมัยใหม่</p>
+                <p>งานจักสานไม่ใช่แค่เพียงของใช้ในครัวเรือน แต่คือ <strong>งานศิลปกรรม</strong> ที่ถ่ายทอดจากรุ่นสู่รุ่น
+                    เป็นตัวแทนบ่งบอกถึงภูมิปัญญาพื้นบ้านของคนไทยในการนำวัสดุธรรมชาติรอบตัว เช่น ไม้ไผ่ หวาย กระจูด
+                    มาสร้างสรรค์เป็นผลงานที่สะท้อนถึงวิถีชีวิต</p>
+                <p>วันนี้ <strong>"สานศิลป์ไทย"</strong> ขอนำเสนอศิลปะแขนงนี้ให้กลับมามีชีวิตชีวาอีกครั้ง
+                    นำสู่สายตาชาวโลกในฐานะ Soft Power ที่ทรงคุณค่า ผสมผสานความดั้งเดิมเข้ากับสุนทรียภาพแห่งยุคสมัยใหม่
+                </p>
             </div>
         </div>
     </section>
@@ -66,7 +98,7 @@
             <h2 class="section-title">เสน่ห์แห่งวัสดุธรรมชาติ</h2>
             <p class="section-subtitle">วัตถุดิบแต่ละชนิดมอบเอกลักษณ์และความรู้สึกที่แตกต่างกัน</p>
         </div>
-        
+
         <div class="container grid-3 gap-lg category-grid">
             <!-- Item 1 -->
             <div class="card reveal fade-in-up" style="transition-delay: 0.1s;">
@@ -75,10 +107,11 @@
                 </div>
                 <div class="card-body">
                     <h3>ไม้ไผ่ (Bamboo)</h3>
-                    <p>มีความยืดหยุ่นและแข็งแรงทนทาน นิยมนำมาสานเป็นตะกร้า กระบุง หรือเครื่องมือจับสัตว์น้ำด้วยลวดลายที่ซับซ้อน</p>
+                    <p>มีความยืดหยุ่นและแข็งแรงทนทาน นิยมนำมาสานเป็นตะกร้า กระบุง
+                        หรือเครื่องมือจับสัตว์น้ำด้วยลวดลายที่ซับซ้อน</p>
                 </div>
             </div>
-            
+
             <!-- Item 2 -->
             <div class="card reveal fade-in-up" style="transition-delay: 0.2s;">
                 <div class="card-img-wrapper">
@@ -86,7 +119,8 @@
                 </div>
                 <div class="card-body">
                     <h3>หวาย (Rattan)</h3>
-                    <p>เหนียวและดัดโค้งได้ดีเยี่ยม ให้ความรู้สึกหรูหราและประณีต มักใช้เป็นเฟอร์นิเจอร์และของตกแต่งบ้านระดับพรีเมียม</p>
+                    <p>เหนียวและดัดโค้งได้ดีเยี่ยม ให้ความรู้สึกหรูหราและประณีต
+                        มักใช้เป็นเฟอร์นิเจอร์และของตกแต่งบ้านระดับพรีเมียม</p>
                 </div>
             </div>
 
@@ -97,7 +131,8 @@
                 </div>
                 <div class="card-body">
                     <h3>กระจูด (Bulrush)</h3>
-                    <p>เสน่ห์แห่งภาคใต้ สร้างสรรค์เป็นกระเป๋าแฟชั่นหรือเสื่อ ให้สัมผัสที่นุ่มนวลและสีสันที่เป็นธรรมชาติ</p>
+                    <p>เสน่ห์แห่งภาคใต้ สร้างสรรค์เป็นกระเป๋าแฟชั่นหรือเสื่อ ให้สัมผัสที่นุ่มนวลและสีสันที่เป็นธรรมชาติ
+                    </p>
                 </div>
             </div>
         </div>
@@ -158,4 +193,5 @@
     <!-- Scripts -->
     <script src="js/script.js"></script>
 </body>
+
 </html>

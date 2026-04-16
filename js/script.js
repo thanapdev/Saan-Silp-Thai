@@ -1,3 +1,15 @@
+// --- Preloader Script ---
+window.addEventListener('load', () => {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        // Ensure the animation is visible for at least 1.2 seconds, plus loading time.
+        setTimeout(() => {
+            preloader.classList.add('preloader-hidden');
+            document.body.classList.remove('loading');
+        }, 1200);
+    }
+});
+
 document.addEventListener('DOMContentLoaded', () => {
     
     /* 1. Sticky Header */
