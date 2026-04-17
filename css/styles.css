@@ -164,10 +164,76 @@ a {
     text-shadow: none;
 }
 
+nav {
+    display: flex;
+    align-items: center;
+}
+
 .nav-links {
     list-style: none;
     display: flex;
     gap: 30px;
+    align-items: center;
+}
+
+/* Language Switcher */
+.lang-switch {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    margin-left: 20px;
+    border-left: 1px solid rgba(255, 255, 255, 0.3);
+    padding-left: 20px;
+}
+
+#main-header.scrolled .lang-switch {
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.lang-switch a {
+    font-family: 'Inter', sans-serif;
+    font-weight: 600;
+    font-size: 0.85rem;
+    color: rgba(255, 255, 255, 0.7);
+    transition: all var(--transition-fast);
+    padding: 4px 8px;
+    border-radius: 4px;
+    text-shadow: none;
+}
+
+#main-header.scrolled .lang-switch a {
+    color: var(--clr-text-body);
+}
+
+.lang-switch a.active {
+    color: var(--clr-white);
+    background-color: var(--clr-primary);
+}
+
+#main-header.scrolled .lang-switch a.active {
+    color: var(--clr-white);
+}
+
+.lang-switch a:hover:not(.active) {
+    color: var(--clr-white);
+    background-color: rgba(255, 255, 255, 0.2);
+}
+
+#main-header.scrolled .lang-switch a:hover:not(.active) {
+    color: var(--clr-primary);
+    background-color: rgba(192, 126, 89, 0.1);
+}
+
+/* English Typography Setup */
+html[lang="en"] {
+    --font-heading: 'Inter', sans-serif;
+    --font-body: 'Inter', sans-serif;
+}
+html[lang="en"] body {
+    letter-spacing: 0.2px;
+}
+html[lang="en"] .logo {
+    letter-spacing: -0.5px;
 }
 
 .nav-links li a {
@@ -565,6 +631,13 @@ footer {
     .hamburger {
         display: block;
         z-index: 1001;
+        margin-left: 15px;
+    }
+
+    .lang-switch {
+        margin-left: auto;
+        border-left: none;
+        padding-left: 0;
     }
 
     .nav-links {
