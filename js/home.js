@@ -406,6 +406,54 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // --- Animations dependent on currentScroll ---
 
+        // Focus & Reveal Section Logic
+        const focusSection = document.getElementById('details-focus-section');
+        if (focusSection) {
+            const rect = focusSection.getBoundingClientRect();
+            const wrapper = focusSection.querySelector('.focus-sticky-wrapper');
+            const totalScroll = rect.height - window.innerHeight;
+            
+            // Programmatic Sticky (Pinning)
+            let pinOffset = 0;
+            if (rect.top <= 0 && rect.top >= -totalScroll) {
+                pinOffset = -rect.top;
+            } else if (rect.top < -totalScroll) {
+                pinOffset = totalScroll;
+            }
+            if (wrapper) wrapper.style.transform = `translateY(${pinOffset}px)`;
+            
+            if (rect.top <= window.innerHeight && rect.bottom >= 0) {
+                let progress = -rect.top / totalScroll;
+                progress = Math.max(0, Math.min(1, progress));
+
+                const bg = focusSection.querySelector('.focus-macro-bg');
+                const title = focusSection.querySelector('.focus-title');
+                const cards = focusSection.querySelector('.focus-cards-container');
+
+                if (bg) {
+                    // Blur goes from 20px to 0px
+                    const blurAmt = 20 * Math.max(0, 1 - (progress * 1.5));
+                    const scaleAmt = 1.1 - (0.1 * Math.min(1, progress * 1.5));
+                    bg.style.filter = `blur(${blurAmt}px)`;
+                    // Since transform handles scale, we must apply it to bg
+                    bg.style.transform = `scale(${scaleAmt})`;
+                }
+
+                if (title) {
+                    const titleProgress = Math.min(1, progress * 2);
+                    title.style.opacity = 1 - titleProgress;
+                    title.style.transform = `translate(-50%, -50%) scale(${1 + (titleProgress * 0.2)})`;
+                }
+
+                if (cards) {
+                    let cardProgress = Math.max(0, (progress - 0.4) / 0.6);
+                    cardProgress = 1 - Math.pow(1 - cardProgress, 3); // ease out
+                    cards.style.opacity = cardProgress;
+                    cards.style.transform = `translateY(${100 - (cardProgress * 100)}px)`;
+                }
+            }
+        }
+
         // Header Scrolled
         if (header) {
             if (currentScroll > window.innerHeight - 100) header.classList.add('scrolled');

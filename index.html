@@ -228,23 +228,51 @@
             </div>
         </section>
 
-        <!-- Floating Image Parallax Section -->
-        <section id="floating-gallery" class="section-padding bg-light">
-            <div class="container text-center mb-loose">
-                <h2 class="section-heading">
-                    <span class="text-line"><span class="text-inner scroll-reveal-up">รายละเอียด</span></span><br>
-                    <span class="text-line"><span
-                            class="text-inner scroll-reveal-up delay-1">ที่ซ่อนอยู่ในเส้นใย</span></span>
-                </h2>
-            </div>
-            <div class="container layout-split mt-loose">
-                <div class="split-left">
-                    <img src="assets/images/gallery_new_1.png" class="scroll-parallax cursor-view" data-speed="0.1"
-                        style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
-                </div>
-                <div class="split-right" style="height: auto;">
-                    <img src="assets/images/gallery_new_2.png" class="scroll-parallax cursor-view" data-speed="-0.1"
-                        style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); margin-top: 100px;">
+        <!-- Focus & Reveal Parallax Section -->
+        <section id="details-focus-section">
+            <div class="focus-sticky-wrapper">
+                <div class="focus-macro-bg" style="background-image: url('assets/images/macro_weave_bg.png');"></div>
+                <div class="focus-overlay-dark" id="focus-flashlight"></div>
+                <div class="focus-content">
+                    <h2 class="focus-title">รายละเอียด<br><span>ที่ซ่อนอยู่ในเส้นใย</span></h2>
+                    
+                    <!-- Interactive Hotspots -->
+                    <div class="focus-hotspots">
+                        <div class="weave-hotspot" style="top: 25%; left: 35%;">
+                            <div class="hotspot-dot"></div>
+                            <div class="hotspot-tooltip">ผิวไผ่ธรรมชาติ: <br>ทนทานต่อความชื้นและสภาพอากาศ</div>
+                        </div>
+                        <div class="weave-hotspot" style="top: 55%; left: 60%;">
+                            <div class="hotspot-dot"></div>
+                            <div class="hotspot-tooltip">การย้อมสีธรรมช่าติ: <br>สีสันแห่งภูมิปัญญาไร้สารเคมี</div>
+                        </div>
+                        <div class="weave-hotspot" style="top: 75%; left: 40%;">
+                            <div class="hotspot-dot"></div>
+                            <div class="hotspot-tooltip">ลายขัดซ้อน: <br>โครงสร้างที่รับน้ำหนักได้ยอดเยี่ยม</div>
+                        </div>
+                    </div>
+
+                    <div class="focus-cards-container">
+                        <div class="glass-detail-card card-left" id="focus-card-1">
+                            <div class="glass-img">
+                                <img src="assets/images/gallery_new_1.png" alt="การเตรียมเส้นใย">
+                            </div>
+                            <div class="glass-text">
+                                <h4>ความละเอียดระดับมิลลิเมตร</h4>
+                                <p>การคัดเลือกและเหลาตอกให้มีขนาดเท่ากันทุกเส้นคือหัวใจสำคัญที่ต้องใช้ความประณีตขั้นสูง</p>
+                            </div>
+                        </div>
+                        
+                        <div class="glass-detail-card card-right" id="focus-card-2">
+                            <div class="glass-img">
+                                <img src="assets/images/gallery_new_2.png" alt="การสอดขัด">
+                            </div>
+                            <div class="glass-text">
+                                <h4>ลวดลายผสานสุนทรียภาพ</h4>
+                                <p>การสอดขัดที่ไม่ได้มีแค่ความทนทาน แต่คือศิลปะที่ส่งต่อผ่านกาลเวลา</p>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </section>
