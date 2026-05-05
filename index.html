@@ -6,18 +6,23 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description"
         content="สานศิลป์ไทย (Sann-Silp-Thai) - เผยแพร่ Soft Power ของไทย งานจักสาน ศิลปะชุมชนแห่งสยาม">
-    <title>สานศิลป์ไทย (Sann-Silp-Thai) | หัตถกรรมงานจักสาน</title>
+    <title>สานศิลป์ไทย (Sann-Silp-Thai) | หัตถกรรมงานจักสานระดับพรีเมียม</title>
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&family=Inter:wght@400;500;600;700&display=swap"
+        href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Thai+Looped:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap"
         rel="stylesheet">
     <!-- Custom CSS -->
     <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/home.css">
 </head>
 
-<body class="loading">
+<body class="loading premium-theme">
+
+    <!-- Custom Premium Cursor -->
+    <div class="cursor-dot-premium"></div>
+    <div class="cursor-follower-premium"></div>
 
     <!-- Preloader Plugin (Pla Tapian) -->
     <div id="preloader">
@@ -38,22 +43,22 @@
                 <circle cx="70" cy="50" r="3" fill="var(--clr-bg-light)" />
             </svg>
         </div>
-        <div class="loader-text">กำลังโหลด...</div>
+        <div class="loader-text">กำลังโหลดสุนทรียภาพ...</div>
     </div>
 
     <!-- Header / Nav -->
-    <header id="main-header">
+    <header id="main-header" class="header-premium">
         <div class="nav-container">
-            <a href="#" class="logo">สานศิลป์ไทย</a>
+            <a href="#" class="logo magnetic-hover" data-strength="30">สานศิลป์ไทย</a>
             <nav>
                 <ul class="nav-links">
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="history.html">ภูมิปัญญา</a></li>
-                    <li><a href="regions.html">อัตลักษณ์</a></li>
-                    <li><a href="soft-power.html">Soft Power</a></li>
-                    <li><a href="save-craft.html">อนุรักษ์</a></li>
+                    <li><a href="index.html" class="magnetic-hover" data-strength="20">หน้าแรก</a></li>
+                    <li><a href="history.html" class="magnetic-hover" data-strength="20">ภูมิปัญญา</a></li>
+                    <li><a href="regions.html" class="magnetic-hover" data-strength="20">อัตลักษณ์</a></li>
+                    <li><a href="soft-power.html" class="magnetic-hover" data-strength="20">Soft Power</a></li>
+                    <li><a href="save-craft.html" class="magnetic-hover" data-strength="20">อนุรักษ์</a></li>
                 </ul>
-                <div class="lang-switch">
+                <div class="lang-switch magnetic-hover" data-strength="15">
                     <a href="index.html" class="active" title="ภาษาไทย">TH</a>
                     <span class="separator">|</span>
                     <a href="index-en.html" title="English">EN</a>
@@ -67,236 +72,258 @@
         </div>
     </header>
 
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="hero-bg" style="background-image: url('assets/images/hero_wicker.png');"></div>
-        <div class="hero-overlay"></div>
-        <div class="hero-content fade-in-up">
-            <h1 class="hero-title">สานศิลป์ไทย<br><span>หัตถศิลป์ ล้ำค่า คู่แผ่นดิน</span></h1>
-            <p class="hero-subtitle">มนต์เสน่ห์แห่ง "งานจักสาน" Soft Power ที่สะท้อนวิถีชีวิต <br>ภูมิปัญญา
-                และศิลปะที่ประณีตของคนไทย</p>
-            <a href="soft-power.html" class="btn btn-primary">ดู Soft Power</a>
-        </div>
-    </section>
+    <!-- Smooth Scroll Container Wrapper -->
+    <div id="smooth-scroll-wrapper">
 
-    <!-- About Section -->
-    <section id="about" class="section padding-y">
-        <div class="container auto-grid align-center">
-            <div class="about-image reveal fade-in-left">
-                <img src="assets/images/rattan_wicker.png" alt="งานจักสานหวาย">
-                <div class="image-backdrop"></div>
+        <!-- Premium Hero Section -->
+        <section id="hero-premium">
+            <div class="hero-image-wrapper scroll-scale-down" data-speed="-0.4">
+                <img src="assets/images/hero_wicker.png" alt="หัตถกรรมไทย" class="hero-bg-img parallax-inner">
+                <div class="hero-overlay-light"></div>
             </div>
-            <div class="about-text reveal fade-in-right">
-                <h2 class="section-title">มรดกทางวัฒนธรรม<br>สู่ <span>Soft Power</span></h2>
-                <p>งานจักสานไม่ใช่แค่เพียงของใช้ในครัวเรือน แต่คือ <strong>งานศิลปกรรม</strong> ที่ถ่ายทอดจากรุ่นสู่รุ่น
-                    เป็นตัวแทนบ่งบอกถึงภูมิปัญญาพื้นบ้านของคนไทยในการนำวัสดุธรรมชาติรอบตัว เช่น ไม้ไผ่ หวาย กระจูด
-                    มาสร้างสรรค์เป็นผลงานที่สะท้อนถึงวิถีชีวิต</p>
-                <p>วันนี้ <strong>"สานศิลป์ไทย"</strong> ขอนำเสนอศิลปะแขนงนี้ให้กลับมามีชีวิตชีวาอีกครั้ง
-                    นำสู่สายตาชาวโลกในฐานะ Soft Power ที่ทรงคุณค่า ผสมผสานความดั้งเดิมเข้ากับสุนทรียภาพแห่งยุคสมัยใหม่
-                </p>
-            </div>
-        </div>
-    </section>
 
-    <!-- Categories Section -->
-    <section id="categories" class="section padding-y bg-light gap-bottom">
-        <div class="container text-center reveal fade-in-up">
-            <h2 class="section-title">เสน่ห์แห่งวัสดุธรรมชาติ</h2>
-            <p class="section-subtitle">วัตถุดิบแต่ละชนิดมอบเอกลักษณ์และความรู้สึกที่แตกต่างกัน</p>
-        </div>
-
-        <div class="container grid-3 gap-lg category-grid">
-            <!-- Item 1 -->
-            <div class="card reveal fade-in-up" style="transition-delay: 0.1s;">
-                <div class="card-img-wrapper">
-                    <img src="assets/images/bamboo_wicker.png" alt="งานจักสานไม้ไผ่" class="card-img">
+            <div class="hero-content-premium">
+                <div class="hero-title-wrapper">
+                    <h1 class="hero-title-main">
+                        <span class="text-line"><span class="text-inner reveal-up">งานศิลป์ที่ถักทอ</span></span>
+                        <span class="text-line"><span class="text-inner reveal-up delay-1">ด้วยจิตวิญญาณ</span></span>
+                        <span class="text-line primary-accent"><span
+                                class="text-inner reveal-up delay-2">แห่งแผ่นดินสยาม</span></span>
+                    </h1>
                 </div>
-                <div class="card-body">
-                    <h3>ไม้ไผ่ (Bamboo)</h3>
-                    <p>มีความยืดหยุ่นและแข็งแรงทนทาน นิยมนำมาสานเป็นตะกร้า กระบุง
-                        หรือเครื่องมือจับสัตว์น้ำด้วยลวดลายที่ซับซ้อน</p>
+                <div class="hero-subtitle-wrapper">
+                    <p class="hero-subtitle-text reveal-fade delay-3">สัมผัสความงามของ "งานจักสาน"
+                        มรดกทางวัฒนธรรมที่สืบทอดจากรุ่นสู่รุ่น ยกระดับสู่ Soft Power ระดับโลก</p>
+                    <div class="reveal-fade delay-4">
+                        <a href="soft-power.html" class="btn-premium magnetic-hover" data-strength="50">
+                            <span class="btn-text">สัมผัสสุนทรียภาพ</span>
+                            <div class="btn-fill"></div>
+                        </a>
+                    </div>
                 </div>
             </div>
 
-            <!-- Item 2 -->
-            <div class="card reveal fade-in-up" style="transition-delay: 0.2s;">
-                <div class="card-img-wrapper">
-                    <img src="assets/images/rattan_wicker.png" alt="งานจักสานหวาย" class="card-img">
-                </div>
-                <div class="card-body">
-                    <h3>หวาย (Rattan)</h3>
-                    <p>เหนียวและดัดโค้งได้ดีเยี่ยม ให้ความรู้สึกหรูหราและประณีต
-                        มักใช้เป็นเฟอร์นิเจอร์และของตกแต่งบ้านระดับพรีเมียม</p>
-                </div>
+            <div class="scroll-indicator-premium reveal-fade delay-5">
+                <div class="line-down"></div>
+                <span>เลื่อนเพื่อสำรวจ</span>
             </div>
+        </section>
 
-            <!-- Item 3 -->
-            <div class="card reveal fade-in-up" style="transition-delay: 0.3s;">
-                <div class="card-img-wrapper">
-                    <img src="assets/images/kra_jood_wicker.png" alt="งานจักสานกระจูด" class="card-img">
-                </div>
-                <div class="card-body">
-                    <h3>กระจูด (Bulrush)</h3>
-                    <p>เสน่ห์แห่งภาคใต้ สร้างสรรค์เป็นกระเป๋าแฟชั่นหรือเสื่อ ให้สัมผัสที่นุ่มนวลและสีสันที่เป็นธรรมชาติ
-                    </p>
-                </div>
+        <!-- Big Scrolling Marquee Text -->
+        <div class="scroll-marquee-container">
+            <div class="scroll-marquee-track" data-direction="left" data-speed="1.5">
+                <h2>CRAFT &bull; ART &bull; CULTURE &bull; WISDOM &bull; HERITAGE &bull; SOFT POWER &bull;</h2>
             </div>
         </div>
-    </section>
 
-    <!-- Gallery Section -->
-    <section id="gallery" class="section padding-y">
-        <div class="container text-center reveal fade-in-up">
-            <h2 class="section-title"><span>แกลเลอรี</span> ผลงาน</h2>
-            <p class="section-subtitle">ชื่นชมความงามของเส้นสายที่สอดประสานอย่างลงตัว</p>
-        </div>
-        <div class="marquee-wrapper reveal fade-in">
-            <div class="marquee-track">
-                <!-- Group 1 -->
-                <div class="marquee-item"><img src="assets/images/hero_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>ศิลปะวิถีชนบท</span></div></div>
-                <div class="marquee-item"><img src="assets/images/kra_jood_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>กระเป๋ากระจูดแฟชั่น</span></div></div>
-                <div class="marquee-item"><img src="assets/images/bamboo_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>ความละเอียดของไม้ไผ่</span></div></div>
-                <div class="marquee-item"><img src="assets/images/rattan_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>เฟอร์นิเจอร์หวายร่วมสมัย</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_1.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>สองมือแห่งศิลปะ</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_2.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>สะพายได้ทุกวัน</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_3.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>หรูหราแบบย่านลิเภา</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_4.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>สีสันในตลาดหัตถกรรม</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_5.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>รอยยิ้มใต้หมวกงอบ</span></div></div>
-                <!-- Group 2 (Duplicated for Seamless Loop) -->
-                <div class="marquee-item"><img src="assets/images/hero_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>ศิลปะวิถีชนบท</span></div></div>
-                <div class="marquee-item"><img src="assets/images/kra_jood_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>กระเป๋ากระจูดแฟชั่น</span></div></div>
-                <div class="marquee-item"><img src="assets/images/bamboo_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>ความละเอียดของไม้ไผ่</span></div></div>
-                <div class="marquee-item"><img src="assets/images/rattan_wicker.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>เฟอร์นิเจอร์หวายร่วมสมัย</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_1.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>สองมือแห่งศิลปะ</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_2.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>สะพายได้ทุกวัน</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_3.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>หรูหราแบบย่านลิเภา</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_4.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>สีสันในตลาดหัตถกรรม</span></div></div>
-                <div class="marquee-item"><img src="assets/images/gallery_new_5.png" alt="หัตถกรรมไทย"><div class="gallery-overlay"><span>รอยยิ้มใต้หมวกงอบ</span></div></div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Product Showcase Section -->
-    <section id="product-showcase" class="product-showcase reveal fade-in">
-        <div class="showcase-bg-container">
-            <div class="showcase-bg-texture"></div>
-        </div>
-        <div class="container text-center relative z-10">
-            <h2 class="section-title">ผลิตภัณฑ์จักสานทรงคุณค่า</h2>
-            <p class="section-subtitle">ความประณีตที่สัมผัสได้จากภูมิปัญญาพื้นถิ่น</p>
-        </div>
-        
-        <div class="carousel-wrap relative z-10">
-            <!-- Global Floating Particles -->
-            <div class="floating-particles">
-                <img src="assets/images/el_bamboo.png" class="floating-element el-1" alt="">
-                <img src="assets/images/el_strip.png" class="floating-element el-2" alt="">
-                <img src="assets/images/el_fern.png" class="floating-element el-3" alt="">
-                <img src="assets/images/el_reed.png" class="floating-element el-4" alt="">
-                <img src="assets/images/el_star.png" class="floating-element el-5" alt="">
-            </div>
-
-            <button class="carousel-btn prev" aria-label="Previous Products">&#10094;</button>
-            <div class="carousel-track">
-                
-                <div class="carousel-slide">
-                    <div class="carousel-img-container">
-                        <img src="assets/images/product_kratib.png" alt="กระติบข้าวอีสาน" class="carousel-img">
+        <!-- Premium About Section (Mask Reveal & Image Parallax) -->
+        <section id="about-premium" class="section-padding">
+            <div class="container layout-split">
+                <div class="split-left">
+                    <h2 class="section-heading">
+                        <span class="text-line"><span class="text-inner scroll-reveal-up">ปรัชญาแห่ง</span></span>
+                        <span class="text-line"><span class="text-inner scroll-reveal-up">เส้นใยธรรมชาติ</span></span>
+                    </h2>
+                    <div class="text-content mt-loose">
+                        <p class="scroll-reveal-fade">หัตถกรรมจักสานไม่ใช่เพียงเครื่องมือเครื่องใช้ แต่คือการหลอมรวม
+                            <strong>วิถีชีวิต</strong> และ <strong>ศิลปะ</strong> เข้าด้วยกัน ทุกเส้นหวายที่สอดประสาน
+                            ทุกริ้วไม้ไผ่ที่ขัดสาน ล้วนซ่อนเรื่องราวของช่างฝีมือผู้ทุ่มเท
+                        </p>
+                        <p class="scroll-reveal-fade mt-tight delay-1">เรายกระดับภูมิปัญญาท้องถิ่นให้ก้าวข้ามขีดจำกัด
+                            สู่ความเป็นสากลที่ยังคงกลิ่นอายของความเป็นไทยอย่างเต็มเปี่ยม</p>
                     </div>
-                    <div class="carousel-content">
-                        <h3>กระติบข้าว (ภาคอีสาน)</h3>
-                        <p>ภาชนะทรงกระบอกสำหรับบรรจุข้าวเหนียว สานด้วยไม้ไผ่เป็นสองชั้นเพื่อเก็บกักความร้อนได้อย่างยอดเยี่ยม คงความนุ่มของข้าวเหนียวได้ตลอดวัน</p>
+
+                    <div class="scroll-reveal-fade delay-2 mt-loose">
+                        <a href="history.html" class="btn-outline magnetic-hover" data-strength="30">
+                            <span class="btn-text">อ่านประวัติศาสตร์</span>
+                        </a>
                     </div>
                 </div>
-
-                <div class="carousel-slide">
-                    <div class="carousel-img-container">
-                        <img src="assets/images/product_ngob.png" alt="งอบชาวนาภาคกลาง" class="carousel-img">
+                <div class="split-right">
+                    <div class="mask-image-container scroll-mask-reveal cursor-view">
+                        <img src="assets/images/rattan_wicker.png" alt="งานหวาย" class="parallax-img" data-speed="0.2">
                     </div>
-                    <div class="carousel-content">
-                        <h3>งอบ (ภาคกลาง)</h3>
-                        <p>หมวกจักสานของชาวนาไทยที่มีโครงสร้างช่วยระบายอากาศได้ดีเยี่ยม สานด้วยใบลานหรือใบตาล ช่วยกันแดดและฝนได้อย่างมีประสิทธิภาพ</p>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="carousel-img-container">
-                        <img src="assets/images/product_lipao.png" alt="กระเป๋าย่านลิเภาแห่งภาคใต้" class="carousel-img">
-                    </div>
-                    <div class="carousel-content">
-                        <h3>กระเป๋าย่านลิเภา (ภาคใต้)</h3>
-                        <p>หัตถกรรมชั้นสูงจากภาคใต้ที่นำเถาย่านลิเภามาจักเป็นเส้นเล็ก แล้วสานให้เป็นลวดลายสลับซับซ้อน มักตกแต่งด้วยโลหะเงินหรือทองคำเพื่อความหรูหรา</p>
+                    <div class="mask-image-container small-mask scroll-mask-reveal delay-2 cursor-view">
+                        <img src="assets/images/bamboo_wicker.png" alt="งานไม้ไผ่" class="parallax-img"
+                            data-speed="0.3">
                     </div>
                 </div>
-
-                <div class="carousel-slide">
-                    <div class="carousel-img-container">
-                        <img src="assets/images/product_kong_khao.png" alt="ก่องข้าวภาคเหนือ" class="carousel-img">
-                    </div>
-                    <div class="carousel-content">
-                        <h3>ก่องข้าว (ภาคเหนือ)</h3>
-                        <p>ภาชนะทรงสูงสำหรับใส่ข้าวเหนียวของชาวล้านนา ฐานทำจากไม้กากบาท มีฝาปิดทรงโดม สะท้อนอัตลักษณ์และวิถีชีวิตชาวเหนือได้อย่างชัดเจน</p>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <div class="carousel-img-container">
-                        <img src="assets/images/product_basket.png" alt="ตะกร้าจักสาน" class="carousel-img">
-                    </div>
-                    <div class="carousel-content">
-                        <h3>ตะกร้าไม้ไผ่ (ภาคกลาง)</h3>
-                        <p>เครื่องจักสานอเนกประสงค์สำหรับจับจ่ายซื้อของ หรือใส่ของไปทำบุญที่วัด ขอบมักถูกถักด้วยหวายเพื่อเพิ่มความทนทานอย่างสูงสุด</p>
-                    </div>
-                </div>
-
-                <div class="carousel-slide">
-                    <!-- Floating Raw Materials -->
-                    <img src="assets/images/el_bamboo.png" class="floating-element el-1" alt="">
-                    <img src="assets/images/el_strip.png" class="floating-element el-2" alt="">
-                    <img src="assets/images/el_fern.png" class="floating-element el-3" alt="">
-
-                    <div class="carousel-img-container">
-                        <img src="assets/images/product_krajood.png" alt="กระเป๋ากระจูดแฟชั่น" class="carousel-img">
-                    </div>
-                    <div class="carousel-content">
-                        <h3>กระเป๋ากระจูด (ภาคใต้)</h3>
-                        <p>ผลงานการนำพืชพรรณท้องถิ่นอย่างกระจูดมาสร้างสรรค์เป็นกระเป๋าแฟชั่นร่วมสมัย สัมผัสนุ่มนวล ให้สีสันและลวดลายที่เป็นธรรมชาติ</p>
-                    </div>
-                </div>
-
             </div>
-            <button class="carousel-btn next" aria-label="Next Products">&#10095;</button>
-        </div>
-    </section>
-    <!-- Footer -->
-    <footer id="contact">
-        <div class="container footer-content">
-            <div class="footer-brand">
-                <h2>สานศิลป์ไทย</h2>
-                <p>ร่วมสืบสานและเผยแพร่คุณค่า "งานจักสาน" ของไทย สู่สายตาประชาคมโลก</p>
+        </section>
+
+        <!-- Horizontal Scroll Section (Gallery/Categories) -->
+        <section id="horizontal-scroll-section">
+            <div class="horizontal-sticky-wrapper">
+                <div class="horizontal-track">
+
+                    <div class="horizontal-item title-item">
+                        <h2 class="huge-text">วัสดุ <br>& <span>ศิลปะ</span></h2>
+                        <p>ความหลากหลายของทรัพยากรธรรมชาติ สู่ผลงานที่แตกต่างกันอย่างสิ้นเชิง
+                            เลื่อนเพื่อเดินทางผ่านสายใยเหล่านี้</p>
+                    </div>
+
+                    <div class="horizontal-item card-item">
+                        <div class="premium-card">
+                            <div class="card-image-box hover-distort cursor-view">
+                                <img src="assets/images/bamboo_wicker.png" alt="ไม้ไผ่">
+                            </div>
+                            <div class="card-info">
+                                <h3>01. ไม้ไผ่ (Bamboo)</h3>
+                                <p>ความแข็งแกร่งที่มาพร้อมความยืดหยุ่น สร้างสรรค์ลวดลายเรขาคณิตที่ซับซ้อน</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-item card-item">
+                        <div class="premium-card">
+                            <div class="card-image-box hover-distort cursor-view">
+                                <img src="assets/images/rattan_wicker.png" alt="หวาย">
+                            </div>
+                            <div class="card-info">
+                                <h3>02. หวาย (Rattan)</h3>
+                                <p>สัญลักษณ์แห่งความหรูหราและประณีต โค้งงอได้อย่างอิสระเพื่องานเฟอร์นิเจอร์ระดับสูง</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-item card-item">
+                        <div class="premium-card">
+                            <div class="card-image-box hover-distort cursor-view">
+                                <img src="assets/images/kra_jood_wicker.png" alt="กระจูด">
+                            </div>
+                            <div class="card-info">
+                                <h3>03. กระจูด (Bulrush)</h3>
+                                <p>เสน่ห์แดนใต้ สัมผัสนุ่มนวล ย้อมสีสันจัดจ้าน สู่กระเป๋าแฟชั่นร่วมสมัย</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="horizontal-item card-item">
+                        <div class="premium-card">
+                            <div class="card-image-box hover-distort cursor-view">
+                                <img src="assets/images/south_yan_lipao.png" alt="ย่านลิเภา">
+                            </div>
+                            <div class="card-info">
+                                <h3>04. ย่านลิเภา (Yan Lipao)</h3>
+                                <p>หัตถศิลป์ชั้นสูง ลวดลายละเอียดอ่อนดุจเส้นผม ผสานกับเครื่องถมทองอย่างวิจิตร</p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
             </div>
-            <div class="footer-links">
-                <h3>เมนูหลัก</h3>
-                <ul>
-                    <li><a href="index.html">หน้าแรก</a></li>
-                    <li><a href="history.html">ภูมิปัญญา</a></li>
-                    <li><a href="regions.html">อัตลักษณ์ท้องถิ่น</a></li>
-                    <li><a href="soft-power.html">Soft Power</a></li>
-                    <li><a href="save-craft.html">การอนุรักษ์</a></li>
-                </ul>
+        </section>
+
+        <!-- Floating Image Parallax Section -->
+        <section id="floating-gallery" class="section-padding bg-light">
+            <div class="container text-center mb-loose">
+                <h2 class="section-heading">
+                    <span class="text-line"><span class="text-inner scroll-reveal-up">รายละเอียด</span></span><br>
+                    <span class="text-line"><span
+                            class="text-inner scroll-reveal-up delay-1">ที่ซ่อนอยู่ในเส้นใย</span></span>
+                </h2>
             </div>
-            <div class="footer-contact">
-                <h3>ติดต่อเรา</h3>
-                <p>อีเมล: info@sannsilpthai.com</p>
-                <p>โทร: +66 2 123 4567</p>
+            <div class="container layout-split mt-loose">
+                <div class="split-left">
+                    <img src="assets/images/gallery_new_1.png" class="scroll-parallax cursor-view" data-speed="0.1"
+                        style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1);">
+                </div>
+                <div class="split-right" style="height: auto;">
+                    <img src="assets/images/gallery_new_2.png" class="scroll-parallax cursor-view" data-speed="-0.1"
+                        style="width: 100%; border-radius: 12px; box-shadow: 0 20px 40px rgba(0,0,0,0.1); margin-top: 100px;">
+                </div>
             </div>
-        </div>
-        <div class="footer-bottom">
-            <p>&copy; 2026 Sann-Silp-Thai (Educational Project). All Rights Reserved.</p>
-        </div>
-    </footer>
+        </section>
+
+        <!-- Masterpiece Product Section -->
+        <section id="masterpiece" class="section-padding relative">
+            <div class="container">
+                <div class="text-center mb-loose">
+                    <h2 class="section-heading">
+                        <span class="text-line"><span class="text-inner scroll-reveal-up">ผลงานชิ้นเอก</span></span>
+                    </h2>
+                    <p class="scroll-reveal-fade subtitle-premium">ความสมบูรณ์แบบในทุกรายละเอียด</p>
+                </div>
+
+                <div class="masterpiece-grid">
+
+                    <div class="master-item scroll-reveal-fade magnetic-container">
+                        <div class="master-img-wrapper cursor-view magnetic-inner" data-strength="15">
+                            <img src="assets/images/product_kratib.png" alt="กระติบ">
+                        </div>
+                        <div class="master-details">
+                            <h3>กระติบข้าว</h3>
+                            <span>ภาคอีสาน</span>
+                        </div>
+                    </div>
+
+                    <div class="master-item scroll-reveal-fade delay-1 magnetic-container">
+                        <div class="master-img-wrapper cursor-view magnetic-inner" data-strength="15">
+                            <img src="assets/images/product_ngob.png" alt="งอบ">
+                        </div>
+                        <div class="master-details">
+                            <h3>งอบ</h3>
+                            <span>ภาคกลาง</span>
+                        </div>
+                    </div>
+
+                    <div class="master-item scroll-reveal-fade delay-2 magnetic-container">
+                        <div class="master-img-wrapper cursor-view magnetic-inner" data-strength="15">
+                            <img src="assets/images/product_lipao.png" alt="กระเป๋าย่านลิเภา">
+                        </div>
+                        <div class="master-details">
+                            <h3>กระเป๋าย่านลิเภา</h3>
+                            <span>ภาคใต้</span>
+                        </div>
+                    </div>
+
+                    <div class="master-item scroll-reveal-fade delay-3 magnetic-container">
+                        <div class="master-img-wrapper cursor-view magnetic-inner" data-strength="15">
+                            <img src="assets/images/product_kong_khao.png" alt="ก่องข้าว">
+                        </div>
+                        <div class="master-details">
+                            <h3>ก่องข้าว</h3>
+                            <span>ภาคเหนือ</span>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer id="contact" class="footer-premium">
+            <div class="container footer-content">
+                <div class="footer-brand">
+                    <h2>สานศิลป์ไทย</h2>
+                    <p>ร่วมสืบสานและเผยแพร่คุณค่า "งานจักสาน" ของไทย สู่สายตาประชาคมโลก</p>
+                </div>
+                <div class="footer-links">
+                    <h3>เมนูหลัก</h3>
+                    <ul>
+                        <li><a href="index.html" class="magnetic-hover" data-strength="10">หน้าแรก</a></li>
+                        <li><a href="history.html" class="magnetic-hover" data-strength="10">ภูมิปัญญา</a></li>
+                        <li><a href="regions.html" class="magnetic-hover" data-strength="10">อัตลักษณ์</a></li>
+                        <li><a href="soft-power.html" class="magnetic-hover" data-strength="10">Soft Power</a></li>
+                        <li><a href="save-craft.html" class="magnetic-hover" data-strength="10">การอนุรักษ์</a></li>
+                    </ul>
+                </div>
+                <div class="footer-contact">
+                    <h3>ติดต่อเรา</h3>
+                    <p>อีเมล: info@sannsilpthai.com</p>
+                    <p>โทร: +66 2 123 4567</p>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sann-Silp-Thai (Educational Project). All Rights Reserved.</p>
+            </div>
+        </footer>
+
+    </div> <!-- End smooth scroll wrapper -->
+
     <!-- Scripts -->
     <script src="js/script.js"></script>
+    <script src="js/home.js"></script>
 </body>
 
 </html>
